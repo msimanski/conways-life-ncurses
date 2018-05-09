@@ -91,7 +91,7 @@ public:
         return temp;
     }
 
-    void placeCell(int x, int y)
+    void placeCell(int x, int y) //not used as of now, used for mouse recognition
     {
       this->worldstate[x][y] = 1;
     }
@@ -147,7 +147,8 @@ void timerExec() //where it all goes down when the timer ticks
 
 int main(int argc, const char * argv[])
 {
-
+    int worldsize[300][300]
+    world playspace = world(worldsize);
     initscr(); //create stdscr
     raw(); //just keep going
 
